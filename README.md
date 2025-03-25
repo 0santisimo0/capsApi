@@ -108,6 +108,20 @@ npm run start:dev
 ### 1. Principios de Clean Architecture
 Clean Architecture se basa en la separación de responsabilidades a través de capas bien definidas:
 
+
+Arquitectura de software propuesta por Robert C. Martin (Uncle Bob) que busca mantener los sistemas flexibles, mantenibles y testeables. Se basa en la idea de separar las responsabilidades del código en capas bien definidas, con el objetivo de minimizar las dependencias entre ellas y facilitar la escalabilidad del software.
+
+### Principios Clave de Clean Architecture
+- Independencia de frameworks: La arquitectura no depende de bibliotecas o frameworks externos. Estos se tratan como herramientas en lugar de ser la base del sistema.
+
+- Independencia de la UI: La interfaz de usuario (web, móvil, CLI, etc.) puede cambiar sin afectar la lógica del negocio.
+
+- Independencia de la base de datos: El sistema no está acoplado a una base de datos específica, permitiendo cambiarla sin afectar la lógica central.
+
+- Independencia de agentes externos: La lógica del negocio no depende de detalles específicos de infraestructura, como APIs, servidores o sistemas externos.
+
+### Capas
+
 - **Capa de Entidades (Domain Layer)**: Define las entidades y reglas de negocio.
 - **Capa de Casos de Uso (Application Layer)**: Contiene la lógica de la aplicación y orquesta las interacciones entre entidades y servicios.
 - **Capa de Infraestructura (Infrastructure Layer)**: Implementa los adaptadores para acceder a bases de datos, servicios externos, etc.
