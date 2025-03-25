@@ -113,6 +113,8 @@ Clean Architecture se basa en la separación de responsabilidades a través de c
 - **Capa de Infraestructura (Infrastructure Layer)**: Implementa los adaptadores para acceder a bases de datos, servicios externos, etc.
 - **Capa de Presentación (Interface Layer)**: Maneja la comunicación con el usuario, incluyendo controladores y API REST.
 
+![alt text](image-1.png)
+
 ### 2. Estructura del Proyecto en NestJS
 
 ```

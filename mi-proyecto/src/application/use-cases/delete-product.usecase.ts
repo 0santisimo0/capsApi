@@ -1,4 +1,4 @@
-import { ProductRepository } from "../interfaces/product-repository.interface";
+import { ProductRepository } from "../../domain/interfaces/product-repository.interface";
 
 export class DeleteProductUseCase {
   constructor(private readonly productRepository: ProductRepository) {}

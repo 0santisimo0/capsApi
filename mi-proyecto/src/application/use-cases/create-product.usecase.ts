@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { ProductRepository } from "../interfaces/product-repository.interface";
+import { ProductRepository } from "../../domain/interfaces/product-repository.interface";
 import { Product } from "../../domain/entities/product.entity";
 
 export class CreateProductUseCase {

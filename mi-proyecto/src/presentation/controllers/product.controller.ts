@@ -3,11 +3,11 @@ import { CreateProductUseCase } from "../../application/use-cases/create-product
 import { UpdateProductUseCase } from "../../application/use-cases/update-product.usecase";
 import { GetProductUseCase } from "../../application/use-cases/get-product.usecase";
 import { DeleteProductUseCase } from "../../application/use-cases/delete-product.usecase";
-import { InMemoryProductRepository } from "../../infrastructure/repositories/product.repository.interface";
+import { LocalMemoryProductRepository } from "../../infrastructure/repositories/localmemory.repository.interface";
 
 @Controller("products")
 export class ProductController {
-  private productRepository = new InMemoryProductRepository();
+  private productRepository = new LocalMemoryProductRepository();
   private createProductUseCase = new CreateProductUseCase(this.productRepository);
   private updateProductUseCase = new UpdateProductUseCase(this.productRepository);
   private getProductUseCase = new GetProductUseCase(this.productRepository);

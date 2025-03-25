@@ -1,7 +1,7 @@
-import { ProductRepository } from "../../application/interfaces/product-repository.interface";
+import { ProductRepository } from "../../domain/interfaces/product-repository.interface";
 import { Product } from "../../domain/entities/product.entity";
 
-export class InMemoryProductRepository implements ProductRepository {
+export class LocalMemoryProductRepository implements ProductRepository {
   private products: Product[] = [];
 
   async create(product: Product): Promise<void> {
